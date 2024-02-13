@@ -222,10 +222,14 @@
 
 .header .top-menu ul li:hover a,
 .header .top-menu ul li.active a {
-  box-shadow: inset 0 -6px 0 #fbd195;
+  box-shadow: inset 0 -6px 0 #a3b18a;
+  -moz-box-shadow: inset 0 -6px 0 #a3b18a;
+  -webkit-box-shadow: inset 0 -6px 0 #a3b18a;
+  -khtml-box-shadow: inset 0 -6px 0 #a3b18a;
+  /* box-shadow: inset 0 -6px 0 #fbd195;
   -moz-box-shadow: inset 0 -6px 0 #fbd195;
   -webkit-box-shadow: inset 0 -6px 0 #fbd195;
-  -khtml-box-shadow: inset 0 -6px 0 #fbd195;
+  -khtml-box-shadow: inset 0 -6px 0 #fbd195; */
 }
 
 @media (max-width: 1079px) {
@@ -308,7 +312,8 @@
 /* 3. Started */
 .section.started {
   padding: 0;
-  background: #ede574;
+  /* background: #ede574; */
+  background: #a3b18a;
 }
 
 .section.started .slide {
@@ -320,17 +325,25 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(/images/topper3.jpg);
+}
+
+@media (max-width: 720px) {
+  .section.started .slide {
+    background-image: url(/images/topper6.jpg);
+  }
 }
 
 .section.started .st-title,
 .section.started .typed-title,
 .section.started .typed-cursor {
   margin: 20px 0 10px 0;
-  font-size: 7.91666667vw;
+  font-size: 6.5vw;
   font-family: 'Montserrat', helvetica;
   line-height: 7.91666667vw;
   color: #ffffff;
-  font-weight: 400;
+  text-shadow: 3px 3px 10px black;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
@@ -405,7 +418,8 @@
 .section.services .service-item .circle .icon {
   font-size: 44px;
   line-height: 48px;
-  color: #f97a7a;
+  /* color: #f97a7a; */
+  color: #588157;
 }
 
 .section.services .service-item .name {
@@ -495,10 +509,14 @@
 
 .section.works .filters .f_btn.active label {
   color: #292929;
-  box-shadow: inset 0 -6px 0 #fbd195;
+  box-shadow: inset 0 -6px 0 #a3b18a;
+  -moz-box-shadow: inset 0 -6px 0 #a3b18a;
+  -webkit-box-shadow: inset 0 -6px 0 #a3b18a;
+  -khtml-box-shadow: inset 0 -6px 0 #a3b18a;
+  /* box-shadow: inset 0 -6px 0 #fbd195;
   -moz-box-shadow: inset 0 -6px 0 #fbd195;
   -webkit-box-shadow: inset 0 -6px 0 #fbd195;
-  -khtml-box-shadow: inset 0 -6px 0 #fbd195;
+  -khtml-box-shadow: inset 0 -6px 0 #fbd195; */
 }
 
 .box-items {
@@ -578,10 +596,14 @@
   font-size: 14px;
   color: #898989;
   line-height: 12px;
-  box-shadow: inset 0 -6px 0 #fbd195;
+  /* box-shadow: inset 0 -6px 0 #a3b18a;
+  -moz-box-shadow: inset 0 -6px 0 #a3b18a;
+  -webkit-box-shadow: inset 0 -6px 0 #a3b18a;
+  -khtml-box-shadow: inset 0 -6px 0 #a3b18a; */
+  /* box-shadow: inset 0 -6px 0 #fbd195;
   -moz-box-shadow: inset 0 -6px 0 #fbd195;
   -webkit-box-shadow: inset 0 -6px 0 #fbd195;
-  -khtml-box-shadow: inset 0 -6px 0 #fbd195;
+  -khtml-box-shadow: inset 0 -6px 0 #fbd195; */
 }
 
 @media (max-width: 1079px) {
@@ -714,10 +736,10 @@ footer .st-soc a:hover .icon {
   font-size: 14px;
   color: #898989;
   line-height: 12px;
-  box-shadow: inset 0 -6px 0 #fbd195;
+  /* box-shadow: inset 0 -6px 0 #fbd195;
   -moz-box-shadow: inset 0 -6px 0 #fbd195;
   -webkit-box-shadow: inset 0 -6px 0 #fbd195;
-  -khtml-box-shadow: inset 0 -6px 0 #fbd195;
+  -khtml-box-shadow: inset 0 -6px 0 #fbd195; */
 }
 
 @media (max-width: 1079px) {
