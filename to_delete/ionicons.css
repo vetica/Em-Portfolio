@@ -17,7 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/* 
 .ion,
 .ionicons,
 .ion-alert:before,
@@ -752,7 +752,19 @@
 .ion-wineglass:before,
 .ion-woman:before,
 .ion-wrench:before,
-.ion-xbox:before {
+.ion-xbox:before { */
+
+.ion,
+.ion-ios-color-wand-outline:before,
+.ion-ios-at-outline:before,
+.ion-ios-redo-outline:before,
+.ion-ios-compose-outline:before,
+.ion-ios-analytics-outline:before,
+.ion-social-linkedin:before,
+.ion-social-linkedin-outline:before,
+.ion-social-twitter:before,
+.ion-social-twitter-outline:before,
+.ion-ios-calendar-outline:before {
   display: inline-block;
   font-family: 'Ionicons';
   speak: none;
@@ -765,6 +777,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ion-ios-calendar-outline:before {
+  content: '\f3f3';
+}
+
+.ion-ios-color-wand-outline:before {
+  content: '\f415';
+}
+
+.ion-ios-at-outline:before {
+  content: '\f3d9';
+}
+
+.ion-ios-analytics-outline:before {
+  content: '\f3cd';
+}
+
+.ion-ios-compose-outline:before {
+  content: '\f417';
+}
+
+.ion-ios-redo-outline:before {
+  content: '\f498';
+}
+
+.ion-social-twitter:before {
+  content: '\f243';
+}
+
+.ion-social-twitter-outline:before {
+  content: '\f242';
+}
+
+.ion-social-linkedin:before {
+  content: '\f239';
+}
+
+.ion-social-linkedin-outline:before {
+  content: '\f238';
+}
+
+/* 
 .ion-alert:before {
   content: '\f101';
 }
@@ -3695,4 +3748,4 @@
 
 .ion-xbox:before {
   content: '\f30c';
-}
+} */
