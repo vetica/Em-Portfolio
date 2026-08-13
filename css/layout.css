@@ -391,7 +391,7 @@
 }
 
 /* 5. Services */
-.section.services {
+/* .section.services {
 	padding: 180px 0 150px 0;
 }
 
@@ -418,7 +418,7 @@
 .section.services .service-item .circle .icon {
 	font-size: 44px;
 	line-height: 48px;
-	/* color: #f97a7a; */
+	color: #f97a7a;
 	color: #588157;
 }
 
@@ -442,15 +442,15 @@
 	.section.services .service-item {
 		margin: 0 0 30px 0;
 	}
-}
+} */
 
 /* 6. Portfolio */
 
-.crop {
+/* .crop {
 	height: 400px !important;
 	object-fit: cover;
 	object-position: 100% 20%;
-}
+} */
 
 .section.works {
 	padding: 180px 0 110px 0;
