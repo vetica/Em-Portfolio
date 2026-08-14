@@ -10,14 +10,6 @@ $(function () {
   var height = $(window).height();
   $('.section.started').css({ height: height });
 
-  /* Preloader */
-  $(window).on('load', function () {
-    $('.preloader .spinner').fadeOut(function () {
-      $('.preloader').fadeOut();
-      $('body').addClass('ready');
-    });
-  });
-
   /* Fade animations on scroll */
   if (width > 720) {
     window.sr = ScrollReveal();
@@ -129,31 +121,25 @@ $(function () {
     }
   });
 
-  /* change logo */
-  if ($(window).scrollTop() > 10) {
-    $('#emily-logo').attr('src', 'images/em_logo_color.png');
-  } else {
-    $('#emily-logo').attr('src', 'images/em_logo.png');
-  }
-  $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 10) {
-      $('#emily-logo').attr('src', 'images/em_logo_color.png');
-    } else {
-      $('#emily-logo').attr('src', 'images/em_logo.png');
-    }
-  });
-
-  /* Initialize masonry items */
+  /* Initialize Masonry immediately. Image width/height attributes preserve
+   * aspect ratios, so layout no longer waits for every portfolio image. */
   var $container = $('.box-items');
 
-  $container.imagesLoaded(function () {
-    $container.multipleFilterMasonry({
-      itemSelector: '.box-item',
-      filtersGroupSelector: '.filters',
-      percentPosition: true,
-      gutter: 0,
-    });
+  $container.multipleFilterMasonry({
+    itemSelector: '.box-item',
+    filtersGroupSelector: '.filters',
+    percentPosition: true,
+    gutter: 0,
   });
+
+  /* Load full popup media only after a project is opened. */
+  function loadPopupImages($content) {
+    $content.find('img[data-src]').each(function () {
+      var $img = $(this);
+      $img.attr('src', $img.attr('data-src'));
+      $img.removeAttr('data-src');
+    });
+  }
 
   /* 12. Initialize masonry filter */
   $('.filters label').on('change', 'input[type="radio"]', function () {
@@ -167,6 +153,11 @@ $(function () {
       overflowY: 'auto',
       closeBtnInside: true,
       mainClass: 'mfp-fade',
+      callbacks: {
+        open: function () {
+          loadPopupImages(this.content);
+        },
+      },
     });
   });
 
@@ -176,6 +167,11 @@ $(function () {
     overflowY: 'auto',
     closeBtnInside: true,
     mainClass: 'mfp-fade',
+    callbacks: {
+      open: function () {
+        loadPopupImages(this.content);
+      },
+    },
   });
 
   /* gallery */
